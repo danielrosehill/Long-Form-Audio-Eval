@@ -1,0 +1,134 @@
+{
+  "ground_truth_file": "/home/daniel/repos/github/Long-Form-Audio-Eval/data/ground-truth/truth_1.txt",
+  "total_runs_evaluated": 8,
+  "results": [
+    {
+      "run_id": "run-1",
+      "run_type": "local-stt",
+      "provider": "local",
+      "model": "whisper-base",
+      "engine": "Buzz",
+      "metrics": {
+        "wer": 17.52,
+        "cer": 5.38,
+        "word_accuracy": 82.48,
+        "insertions": 44,
+        "deletions": 62,
+        "substitutions": 726,
+        "hits": 3960
+      }
+    },
+    {
+      "run_id": "run-2",
+      "run_type": "local-stt",
+      "provider": "local",
+      "model": "whisper-tiny",
+      "engine": "Buzz",
+      "metrics": {
+        "wer": 22.49,
+        "cer": 8.39,
+        "word_accuracy": 77.51,
+        "insertions": 82,
+        "deletions": 155,
+        "substitutions": 831,
+        "hits": 3762
+      }
+    },
+    {
+      "run_id": "run-3",
+      "run_type": "local-stt",
+      "provider": "local",
+      "model": "whisper-base",
+      "engine": "Buzz",
+      "metrics": {
+        "wer": 17.52,
+        "cer": 5.38,
+        "word_accuracy": 82.48,
+        "insertions": 44,
+        "deletions": 62,
+        "substitutions": 726,
+        "hits": 3960
+      }
+    },
+    {
+      "run_id": "manual-1",
+      "run_type": "cloud-stt",
+      "provider": "gladia",
+      "model": "solaria-1",
+      "engine": "api",
+      "metrics": {
+        "wer": 20.83,
+        "cer": 6.3,
+        "word_accuracy": 79.17,
+        "insertions": 100,
+        "deletions": 92,
+        "substitutions": 797,
+        "hits": 3859
+      }
+    },
+    {
+      "run_id": "manual-2",
+      "run_type": "cloud-stt",
+      "provider": "deepgram",
+      "model": "nova-3",
+      "engine": "api",
+      "metrics": {
+        "wer": 18.72,
+        "cer": 7.33,
+        "word_accuracy": 81.28,
+        "insertions": 60,
+        "deletions": 214,
+        "substitutions": 615,
+        "hits": 3919
+      }
+    },
+    {
+      "run_id": "manual-3",
+      "run_type": "cloud-stt",
+      "provider": "assemblyai",
+      "model": "best",
+      "engine": "api",
+      "metrics": {
+        "wer": 18.79,
+        "cer": 6.24,
+        "word_accuracy": 81.21,
+        "insertions": 64,
+        "deletions": 156,
+        "substitutions": 672,
+        "hits": 3920
+      }
+    },
+    {
+      "run_id": "manual-4",
+      "run_type": "cloud-stt",
+      "provider": "speechmatics",
+      "model": "slam-1-global-english",
+      "engine": "api",
+      "metrics": {
+        "wer": 21.65,
+        "cer": 7.15,
+        "word_accuracy": 78.35,
+        "insertions": 158,
+        "deletions": 51,
+        "substitutions": 819,
+        "hits": 3878
+      }
+    },
+    {
+      "run_id": "manual-5",
+      "run_type": "cloud-stt",
+      "provider": "openai",
+      "model": "whisper-1",
+      "engine": "api",
+      "metrics": {
+        "wer": 19.27,
+        "cer": 6.4,
+        "word_accuracy": 80.73,
+        "insertions": 114,
+        "deletions": 106,
+        "substitutions": 695,
+        "hits": 3947
+      }
+    }
+  ]
+}

@@ -98,7 +98,7 @@
         "temperature": 0.0
       },
       "output_dir": "runs/cloud-stt/run-4",
-      "completed": false,
+      "completed": true,
       "notes": "OpenAI Whisper API",
       "run_notes": {
         "language_detection": {
@@ -341,6 +341,145 @@
       "output_dir": "runs/cloud-stt/run-13",
       "completed": false,
       "notes": "Gladia fast model via Eden AI",
+      "run_notes": {
+        "language_detection": {
+          "auto_detect": false,
+          "language_specified": true,
+          "language_code": "en"
+        }
+      }
+    },
+    {
+      "run_id": "manual-1",
+      "run_type": "cloud-stt",
+      "model": "solaria-1",
+      "provider": "gladia",
+      "inference_provider": "direct",
+      "engine": "api",
+      "run_method": {
+        "interface": "api",
+        "automation": "manual",
+        "description": "Manual run - standardized output format"
+      },
+      "settings": {
+        "language": "en"
+      },
+      "output_dir": "runs/cloud-stt/manual-1",
+      "completed": true,
+      "notes": "Gladia Solaria 1 model - manual run",
+      "run_notes": {
+        "language_detection": {
+          "auto_detect": false,
+          "language_specified": true,
+          "language_code": "en"
+        }
+      }
+    },
+    {
+      "run_id": "manual-2",
+      "run_type": "cloud-stt",
+      "model": "nova-3",
+      "provider": "deepgram",
+      "inference_provider": "direct",
+      "engine": "api",
+      "run_method": {
+        "interface": "api",
+        "automation": "manual",
+        "description": "Manual run - standardized output format"
+      },
+      "settings": {
+        "language": "en",
+        "smart_format": true,
+        "punctuate": true
+      },
+      "output_dir": "runs/cloud-stt/manual-2",
+      "completed": true,
+      "notes": "Deepgram Nova-3 model - manual run",
+      "run_notes": {
+        "language_detection": {
+          "auto_detect": false,
+          "language_specified": true,
+          "language_code": "en"
+        },
+        "processing_time": 3.0,
+        "audio_duration": 1637.9652
+      }
+    },
+    {
+      "run_id": "manual-3",
+      "run_type": "cloud-stt",
+      "model": "best",
+      "provider": "assemblyai",
+      "inference_provider": "direct",
+      "engine": "api",
+      "run_method": {
+        "interface": "api",
+        "automation": "manual",
+        "description": "Manual run - standardized output format"
+      },
+      "settings": {
+        "language_code": "en",
+        "punctuate": true,
+        "format_text": true
+      },
+      "output_dir": "runs/cloud-stt/manual-3",
+      "completed": true,
+      "notes": "AssemblyAI Best model - manual run",
+      "run_notes": {
+        "language_detection": {
+          "auto_detect": false,
+          "language_specified": true,
+          "language_code": "en"
+        }
+      }
+    },
+    {
+      "run_id": "manual-4",
+      "run_type": "cloud-stt",
+      "model": "slam-1-global-english",
+      "provider": "speechmatics",
+      "inference_provider": "direct",
+      "engine": "api",
+      "run_method": {
+        "interface": "api",
+        "automation": "manual",
+        "description": "Manual run - standardized output format"
+      },
+      "settings": {
+        "language": "en",
+        "operating_point": "enhanced",
+        "enable_partials": false
+      },
+      "output_dir": "runs/cloud-stt/manual-4",
+      "completed": true,
+      "notes": "Speechmatics Slam 1 Global English - manual run",
+      "run_notes": {
+        "language_detection": {
+          "auto_detect": false,
+          "language_specified": true,
+          "language_code": "en"
+        }
+      }
+    },
+    {
+      "run_id": "manual-5",
+      "run_type": "cloud-stt",
+      "model": "whisper-1",
+      "provider": "openai",
+      "inference_provider": "direct",
+      "engine": "api",
+      "run_method": {
+        "interface": "api",
+        "automation": "manual",
+        "description": "Manual run - standardized output format"
+      },
+      "settings": {
+        "language": "en",
+        "temperature": 0.0
+      },
+      "output_dir": "runs/cloud-stt/manual-5",
+      "completed": true,
+      "notes": "OpenAI Whisper-1 model - manual run via web UI",
       "run_notes": {
         "language_detection": {
           "auto_detect": false,
