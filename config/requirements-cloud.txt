@@ -1,0 +1,16 @@
+# Unified API Gateway
+edenai>=6.0.0
+
+# Cloud STT API clients (legacy/optional - Eden AI provides unified access)
+# openai>=1.0.0
+# groq>=0.4.0
+# assemblyai>=0.17.0
+# deepgram-sdk>=3.0.0
+# speechmatics-python>=1.0.0
+
+# Evaluation metrics
+jiwer>=3.0.0
+werpy>=1.0.0
+
+# Utilities
+python-dotenv>=1.0.0

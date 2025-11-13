@@ -1,0 +1,2069 @@
+1
+00:00:00,120 --> 00:00:06,520
+Hello and welcome to a audio data
+set consisting of one single
+
+2
+00:00:06,520 --> 00:00:12,120
+episode of a non-existent podcast.
+Or it, uh, I may append this to a
+
+3
+00:00:12,120 --> 00:00:16,640
+podcast that I set up recently.
+Um, regarding my, uh,
+
+4
+00:00:16,680 --> 00:00:21,960
+with my thoughts on speech,
+tech and AI in particular,
+
+5
+00:00:22,240 --> 00:00:27,960
+more AI and generative AI, I would,
+uh, I would say, but in any event,
+
+6
+00:00:27,960 --> 00:00:32,480
+the purpose of this, um,
+voice recording is actually to create
+
+7
+00:00:32,680 --> 00:00:37,560
+a lengthy voice sample for a quick
+evaluation, a back of the envelope
+
+8
+00:00:37,560 --> 00:00:41,160
+evaluation, as they might say,
+for different speech to text models.
+
+9
+00:00:41,160 --> 00:00:43,800
+And I'm doing this because I,
+uh, I thought I'd made a great
+
+10
+00:00:43,800 --> 00:00:48,320
+breakthrough in my journey with
+speech tech, and that was succeeding
+
+11
+00:00:48,320 --> 00:00:52,720
+in the elusive task of fine tuning.
+Whisper, whisper is.
+
+12
+00:00:52,840 --> 00:00:56,960
+And I'm going to just talk.
+I'm trying to mix up, uh,
+
+13
+00:00:56,960 --> 00:01:00,470
+I'm going to try a few different
+styles of speaking.
+
+14
+00:01:00,470 --> 00:01:02,630
+I might whisper something at
+some point as well,
+
+15
+00:01:03,190 --> 00:01:07,150
+and I'll go back to speaking loud in,
+uh, in different parts.
+
+16
+00:01:07,150 --> 00:01:09,710
+I'm going to sound really like a
+crazy person, because I'm also
+
+17
+00:01:09,710 --> 00:01:15,870
+going to try to speak at different
+pitches and cadences in order to
+
+18
+00:01:15,910 --> 00:01:20,630
+really try to put a speech to
+text model through its paces,
+
+19
+00:01:20,630 --> 00:01:25,870
+which is trying to make sense of,
+is this guy just on incoherently in
+
+20
+00:01:25,870 --> 00:01:34,350
+one long sentence, or are these just
+actually a series of step standalone,
+
+21
+00:01:34,350 --> 00:01:37,510
+standalone, standalone sentences?
+And how is it going to handle
+
+22
+00:01:37,510 --> 00:01:40,750
+step alone? That's not a word.
+Uh, what happens when you use
+
+23
+00:01:40,750 --> 00:01:44,030
+speech to text and you use a fake
+word and then you're like, wait,
+
+24
+00:01:44,030 --> 00:01:48,350
+that's not actually that word doesn't
+exist. How does AI handle that?
+
+25
+00:01:48,390 --> 00:01:53,910
+And, uh, these and more are all
+the questions that I'm seeking
+
+26
+00:01:53,910 --> 00:01:57,350
+to answer in this training data.
+Now, why did why was it trying
+
+27
+00:01:57,350 --> 00:01:59,740
+to fine tune a whisper?
+And what is whisper?
+
+28
+00:01:59,780 --> 00:02:03,540
+As I said, I'm gonna try to, uh,
+record this at a couple of different
+
+29
+00:02:03,540 --> 00:02:09,060
+levels of technicality for folks who
+are, uh, you know, in the normal, uh,
+
+30
+00:02:09,060 --> 00:02:13,460
+world and not totally stuck down
+the rabbit hole of AI, uh, which I
+
+31
+00:02:13,460 --> 00:02:17,460
+have to say is a really wonderful,
+uh, rabbit hole to be to be down.
+
+32
+00:02:17,580 --> 00:02:21,700
+Um, it's a really interesting area.
+And speech and voice tech is is
+
+33
+00:02:21,940 --> 00:02:24,980
+the aspect of it that I find
+actually most.
+
+34
+00:02:25,180 --> 00:02:28,340
+I'm not sure I would say the most
+interesting, because there's just
+
+35
+00:02:28,340 --> 00:02:32,700
+so much that is fascinating in AI.
+Uh, but the most that I find the
+
+36
+00:02:32,700 --> 00:02:36,220
+most personally transformative
+in terms of the impact that it's
+
+37
+00:02:36,220 --> 00:02:41,660
+had on my daily work life and
+productivity and how I sort of work.
+
+38
+00:02:41,940 --> 00:02:48,020
+And I'm persevering hard with the
+task of trying to guess a good
+
+39
+00:02:48,020 --> 00:02:51,700
+solution working for Linux, which if
+anyone actually does listen to this,
+
+40
+00:02:51,700 --> 00:02:55,100
+not just for the training data
+and for the actual content, uh,
+
+41
+00:02:55,140 --> 00:02:59,600
+this is this is has sparked I had
+besides the fine tune not working.
+
+42
+00:02:59,600 --> 00:03:05,560
+Well, that was the failure.
+Um, I used clod code because one
+
+43
+00:03:05,560 --> 00:03:10,160
+thinks these days that there is
+nothing short of solving,
+
+44
+00:03:11,040 --> 00:03:14,680
+you know, the, uh,
+the reason of life or something.
+
+45
+00:03:15,080 --> 00:03:19,560
+Uh, that clod and agentic AI can't
+do, uh, which is not really the case.
+
+46
+00:03:19,600 --> 00:03:23,600
+Uh, it does seem that way sometimes,
+but it fails a lot as well.
+
+47
+00:03:23,600 --> 00:03:26,960
+And this is one of those, uh,
+instances where last week I put
+
+48
+00:03:26,960 --> 00:03:31,400
+together an hour of voice training
+data, basically speaking just
+
+49
+00:03:31,400 --> 00:03:35,040
+random things for three minutes.
+And, um,
+
+50
+00:03:35,720 --> 00:03:38,520
+it was actually kind of tedious
+because the texts were really weird.
+
+51
+00:03:38,520 --> 00:03:42,120
+Some of them were it was like it
+was AI generated.
+
+52
+00:03:42,320 --> 00:03:44,920
+Um, I tried before to read
+Sherlock Holmes for an hour and
+
+53
+00:03:44,920 --> 00:03:47,000
+I just couldn't.
+I was so bored, uh,
+
+54
+00:03:47,040 --> 00:03:50,800
+after ten minutes that I was like,
+okay, now I'm just gonna have to
+
+55
+00:03:50,800 --> 00:03:56,470
+find something else to read.
+So I used a created with AI
+
+56
+00:03:56,510 --> 00:04:00,150
+studio vibe coded.
+A synthetic text generator.
+
+57
+00:04:00,390 --> 00:04:03,990
+Um, which actually I thought was
+probably a better way of doing it
+
+58
+00:04:03,990 --> 00:04:08,870
+because it would give me more short
+samples with more varied content.
+
+59
+00:04:08,870 --> 00:04:13,310
+So I was like, okay, give me a voice
+note, like I'm recording an email,
+
+60
+00:04:13,310 --> 00:04:18,110
+give me a short story to read,
+give me prose, um, to read.
+
+61
+00:04:18,110 --> 00:04:21,310
+So I came up with all these
+different things, and I added a
+
+62
+00:04:21,310 --> 00:04:24,750
+little timer to it so I could
+see how close I was to one hour.
+
+63
+00:04:24,990 --> 00:04:29,830
+Um, and, uh, I spent like an hour one
+afternoon or probably two hours by
+
+64
+00:04:29,830 --> 00:04:34,190
+the time you, um, you do retakes
+or whatever because you want to.
+
+65
+00:04:34,990 --> 00:04:39,190
+It gave me a source of truth,
+which I'm not sure if that's the
+
+66
+00:04:39,190 --> 00:04:43,550
+scientific way to approach this topic
+of gathering, uh, training data,
+
+67
+00:04:43,550 --> 00:04:48,070
+but I thought it made sense.
+Um, I have a lot of audio data
+
+68
+00:04:48,070 --> 00:04:52,070
+from recording voice notes,
+which I've also kind of used, um,
+
+69
+00:04:52,070 --> 00:04:55,780
+been experimenting with using for
+a different purpose, slightly
+
+70
+00:04:55,780 --> 00:05:00,820
+different annotating task types.
+It's more text classification
+
+71
+00:05:00,820 --> 00:05:03,740
+experiment or uh, well,
+it's more than that, actually.
+
+72
+00:05:03,740 --> 00:05:08,100
+I'm working on a voice app,
+so it's a prototype I guess is
+
+73
+00:05:08,100 --> 00:05:12,780
+really more accurate.
+Um, but you can do that and you
+
+74
+00:05:12,780 --> 00:05:14,220
+can work backwards.
+You're like,
+
+75
+00:05:14,260 --> 00:05:18,620
+you listen back to a voice note
+and you painfully go through one
+
+76
+00:05:18,620 --> 00:05:21,980
+of those transcribing, you know,
+where you start and stop and scrub
+
+77
+00:05:21,980 --> 00:05:24,100
+around it and you fix the errors.
+But it's really,
+
+78
+00:05:24,100 --> 00:05:27,220
+really boring to do that.
+So I thought it would be less
+
+79
+00:05:27,220 --> 00:05:31,860
+tedious in the long term if I just
+recorded The Source of truth.
+
+80
+00:05:32,180 --> 00:05:34,300
+So it gave me these three minute
+snippets.
+
+81
+00:05:34,300 --> 00:05:38,780
+I recorded them and saved an MP3
+and a txt in the same folder,
+
+82
+00:05:38,780 --> 00:05:43,820
+and I created an hour of that data.
+Uh, so I was very hopeful, quietly,
+
+83
+00:05:43,860 --> 00:05:46,380
+you know, a little bit hopeful
+that I would be able that I could
+
+84
+00:05:46,380 --> 00:05:49,700
+actually fine tune, whisper.
+Um, I want to fine tune whisper
+
+85
+00:05:49,700 --> 00:05:54,840
+because when I got into voice tech
+last November, my wife was in
+
+86
+00:05:54,840 --> 00:05:59,600
+the US and I was alone at home.
+And you know, when crazy people
+
+87
+00:05:59,600 --> 00:06:03,760
+like me do really wild things like
+use voice to tech, uh, technology.
+
+88
+00:06:03,760 --> 00:06:06,520
+That was basically, um,
+when I started doing it,
+
+89
+00:06:06,520 --> 00:06:10,280
+I didn't feel like a crazy person
+speaking to myself, and my
+
+90
+00:06:10,280 --> 00:06:16,120
+expectations weren't that high.
+Uh, I used speech tech now and again.
+
+91
+00:06:16,200 --> 00:06:18,480
+Um, tried it out.
+I was like, it'd be really cool
+
+92
+00:06:18,480 --> 00:06:20,520
+if you could just, like,
+speak into your computer.
+
+93
+00:06:20,880 --> 00:06:24,720
+And whatever I tried out that
+had Linux support was just.
+
+94
+00:06:25,440 --> 00:06:28,640
+It was not good, basically.
+Um, and this blew me away from
+
+95
+00:06:28,640 --> 00:06:32,040
+the first go.
+I mean, it wasn't 100% accurate
+
+96
+00:06:32,080 --> 00:06:35,160
+out of the box and it took work,
+but it was good enough that there was
+
+97
+00:06:35,160 --> 00:06:39,720
+a solid foundation and it kind of
+passed that, uh, pivot point that
+
+98
+00:06:39,720 --> 00:06:42,880
+it's actually worth doing this.
+You know, there's a point where
+
+99
+00:06:42,880 --> 00:06:46,920
+it's so like the transcript is you
+don't have to get 100% accuracy
+
+100
+00:06:46,920 --> 00:06:50,630
+for it to be worth your time for
+speech to text to be a worthwhile
+
+101
+00:06:50,630 --> 00:06:53,070
+addition to your productivity.
+But you do need to get above.
+
+102
+00:06:53,110 --> 00:06:57,750
+Let's say, I don't know, 85%.
+If it's 60% or 50%,
+
+103
+00:06:57,750 --> 00:07:00,790
+you inevitably say, screw it.
+I'll just type it because you end up
+
+104
+00:07:00,790 --> 00:07:05,070
+missing errors in the transcript
+and it becomes actually worse.
+
+105
+00:07:05,070 --> 00:07:06,830
+You end up in a worse position
+than you started with.
+
+106
+00:07:06,830 --> 00:07:11,030
+And that's been my experience.
+So, um, I was like, oh,
+
+107
+00:07:11,070 --> 00:07:13,550
+this is actually really, really good.
+Now how did that happen?
+
+108
+00:07:13,550 --> 00:07:18,910
+And the answer is ASR whisper
+being open sourced and the
+
+109
+00:07:18,910 --> 00:07:21,910
+transformer architecture,
+if you want to go back to the,
+
+110
+00:07:22,510 --> 00:07:26,750
+um, to the underpinnings, which
+really blows my mind and it's on my
+
+111
+00:07:26,750 --> 00:07:32,430
+list to read through that paper.
+Um, all you need is attention as
+
+112
+00:07:33,470 --> 00:07:38,470
+attentively as can be done with my
+limited brain because it's super,
+
+113
+00:07:38,470 --> 00:07:42,310
+super high level stuff.
+Um, super advanced stuff.
+
+114
+00:07:42,350 --> 00:07:48,070
+I mean, uh, but that I think of all
+the things that are fascinating
+
+115
+00:07:48,180 --> 00:07:52,820
+about the sudden rise in AI and
+the dramatic capabilities.
+
+116
+00:07:53,420 --> 00:07:55,700
+I find it fascinating that few
+people are like, hang on,
+
+117
+00:07:55,860 --> 00:07:59,740
+you've got this thing that can speak
+to you like a chatbot, an LLM,
+
+118
+00:08:00,420 --> 00:08:05,580
+and then you've got image generation.
+Okay, so firstly, those two things on
+
+119
+00:08:05,580 --> 00:08:10,860
+the surface have nothing in common.
+Um, so like how are they how did that
+
+120
+00:08:10,860 --> 00:08:13,100
+just happen all at the same time.
+And then when you extend that
+
+121
+00:08:13,100 --> 00:08:16,180
+further, um, you're like sooner,
+right?
+
+122
+00:08:16,180 --> 00:08:21,700
+You can sing a song and AI will like,
+come up with an instrumental and then
+
+123
+00:08:21,700 --> 00:08:23,860
+you've got whisper and you're like,
+wait a second,
+
+124
+00:08:24,060 --> 00:08:28,100
+how did all this stuff, like,
+if it's all AI, what's like there
+
+125
+00:08:28,100 --> 00:08:30,700
+has to be some commonality.
+Otherwise these are four.
+
+126
+00:08:30,780 --> 00:08:34,780
+These are totally different
+technologies on the surface of it.
+
+127
+00:08:34,780 --> 00:08:40,220
+And, uh, the transformer architecture
+is, as far as I know, the answer.
+
+128
+00:08:40,220 --> 00:08:43,860
+And I can't even say can't even
+pretend that I really understand
+
+129
+00:08:44,140 --> 00:08:47,290
+what the transformer
+architecture means in depth,
+
+130
+00:08:47,290 --> 00:08:51,810
+but I have scanned it and as I said,
+I want to print it and really kind
+
+131
+00:08:51,810 --> 00:08:56,770
+of think over it at some point,
+and I'll probably feel bad about
+
+132
+00:08:56,770 --> 00:08:59,090
+myself, I think,
+because weren't those guys in their
+
+133
+00:08:59,130 --> 00:09:04,010
+in their 20s like, that's crazy.
+I think I asked ChatGPT once who
+
+134
+00:09:04,050 --> 00:09:08,370
+were the who wrote that paper
+and how old were they when it
+
+135
+00:09:08,370 --> 00:09:11,290
+was published in arXiv?
+And I was expecting like,
+
+136
+00:09:11,530 --> 00:09:13,450
+I don't know,
+what do you what do you imagine?
+
+137
+00:09:13,450 --> 00:09:15,050
+I personally imagine kind of like,
+you know,
+
+138
+00:09:15,090 --> 00:09:19,210
+you have these breakthroughs during
+Covid and things like that where
+
+139
+00:09:19,250 --> 00:09:22,210
+like these kind of really obscure
+scientists who are like in their
+
+140
+00:09:22,210 --> 00:09:27,250
+50s and they've just kind of been
+laboring in labs and, uh, wearily
+
+141
+00:09:27,250 --> 00:09:30,650
+and writing in publishing in kind
+of obscure academic publications.
+
+142
+00:09:30,850 --> 00:09:34,050
+And they finally, like,
+hit a big or win a Nobel Prize and
+
+143
+00:09:34,050 --> 00:09:37,930
+then their household household names.
+Uh, so that was kind of what I
+
+144
+00:09:37,930 --> 00:09:39,770
+had in mind.
+That was the mental image I'd
+
+145
+00:09:39,770 --> 00:09:44,010
+formed of the birth of arXiv.
+Like, I wasn't expecting 20
+
+146
+00:09:44,050 --> 00:09:47,430
+somethings in San Francisco,
+though I thought that was both very,
+
+147
+00:09:47,430 --> 00:09:49,990
+very funny, very cool,
+and actually kind of inspiring.
+
+148
+00:09:50,510 --> 00:09:55,630
+It's nice to think that people who,
+you know, just you might put them
+
+149
+00:09:55,630 --> 00:10:01,030
+in the kind of milieu or bubble or
+world that you are in or credibly in,
+
+150
+00:10:01,070 --> 00:10:03,710
+through, you know,
+a series of connections that are
+
+151
+00:10:03,710 --> 00:10:07,750
+coming up with such literally
+world changing, um, innovations.
+
+152
+00:10:07,790 --> 00:10:11,550
+Uh, so that was, I thought,
+anyway, that, that that was cool.
+
+153
+00:10:12,190 --> 00:10:14,070
+Okay. Voice training data.
+How are we doing?
+
+154
+00:10:14,070 --> 00:10:18,110
+We're about ten minutes, and I'm
+still talking about voice technology.
+
+155
+00:10:18,310 --> 00:10:22,470
+Um, so whisper was brilliant,
+and I was so excited that I was.
+
+156
+00:10:22,470 --> 00:10:25,750
+My first instinct was to, like,
+get like, oh, my gosh,
+
+157
+00:10:25,750 --> 00:10:27,830
+I have to get, like,
+a really good microphone for this.
+
+158
+00:10:28,070 --> 00:10:31,750
+So, um, I didn't go on a
+spending spree because I said,
+
+159
+00:10:31,790 --> 00:10:34,590
+I'm gonna have to just wait a
+month and see if I still use this.
+
+160
+00:10:35,030 --> 00:10:40,110
+And it just kind of became it's
+become really part of my daily
+
+161
+00:10:40,110 --> 00:10:43,110
+routine.
+Like, if I'm writing an email,
+
+162
+00:10:43,110 --> 00:10:47,140
+I'll record a voice note.
+And then I've developed and it's
+
+163
+00:10:47,140 --> 00:10:50,020
+nice to see that everyone is
+like developing the same things
+
+164
+00:10:50,020 --> 00:10:52,020
+in parallel.
+Like, that's kind of a weird thing
+
+165
+00:10:52,060 --> 00:10:57,460
+to say, but when I look, I kind of
+came when I started working on this,
+
+166
+00:10:57,500 --> 00:11:00,820
+these prototypes on GitHub,
+which is where I just kind of
+
+167
+00:11:00,860 --> 00:11:04,860
+share very freely and loosely,
+uh, ideas and, you know,
+
+168
+00:11:04,900 --> 00:11:10,140
+first iterations on, on concepts,
+um, and for want of a better word,
+
+169
+00:11:10,140 --> 00:11:14,020
+I called it like, uh,
+lm post-processing or cleanup or
+
+170
+00:11:14,260 --> 00:11:18,220
+basically a system prompt that after
+you get back the raw text from
+
+171
+00:11:18,540 --> 00:11:24,220
+whisper, you run it through a model
+and say, okay, this is crappy text,
+
+172
+00:11:24,260 --> 00:11:27,260
+like add sentence structure and,
+you know, fix it up.
+
+173
+00:11:27,700 --> 00:11:32,780
+And, um, now when I'm exploring the
+different tools that are out there
+
+174
+00:11:32,820 --> 00:11:36,700
+that people have built, I see, uh,
+quite a number of projects have
+
+175
+00:11:37,300 --> 00:11:41,820
+basically done the same thing,
+um, less that be misconstrued.
+
+176
+00:11:41,820 --> 00:11:44,490
+I'm not saying for a millisecond
+that I inspired them.
+
+177
+00:11:44,490 --> 00:11:49,010
+I'm sure this has been a thing that's
+been integrated into tools for a
+
+178
+00:11:49,050 --> 00:11:52,410
+while, but it's it's the kind of
+thing that when you start using these
+
+179
+00:11:52,410 --> 00:11:56,850
+tools every day, the need for it
+is almost instantly apparent, uh,
+
+180
+00:11:56,850 --> 00:12:00,890
+because text that doesn't have any
+punctuation or paragraph spacing
+
+181
+00:12:00,930 --> 00:12:04,370
+takes a long time to, you know,
+it takes so long to get it into
+
+182
+00:12:04,370 --> 00:12:09,490
+a presentable email that again,
+it's it's it moves speech tech
+
+183
+00:12:09,530 --> 00:12:13,050
+into that before that inflection
+point where you're like, no,
+
+184
+00:12:13,050 --> 00:12:16,370
+it's just not worth it.
+It's like it'll just be quicker
+
+185
+00:12:16,370 --> 00:12:18,970
+to type this.
+So it's a big it's a little touch.
+
+186
+00:12:18,970 --> 00:12:24,210
+That actually is a big deal.
+Uh, so I was on whisper and I've
+
+187
+00:12:24,210 --> 00:12:28,290
+been using whisper and I kind of
+early on found a couple of tools.
+
+188
+00:12:28,330 --> 00:12:31,050
+I couldn't find what I was
+looking for on Linux, which is,
+
+189
+00:12:31,490 --> 00:12:35,890
+um, basically just something
+that'll run in the background.
+
+190
+00:12:35,930 --> 00:12:40,250
+You'll give it an API key and it
+will just transcribe. Um.
+
+191
+00:12:41,400 --> 00:12:44,120
+with, like, a little key to
+start and stop the dictation.
+
+192
+00:12:44,720 --> 00:12:49,160
+Uh, and the issues were I discovered
+that, like most people involved in
+
+193
+00:12:49,160 --> 00:12:54,040
+creating these projects were very
+much focused on local models running
+
+194
+00:12:54,040 --> 00:12:57,520
+whisper locally, because you can.
+And I tried that a bunch of
+
+195
+00:12:57,520 --> 00:13:00,960
+times and just never got results
+that were as good as the cloud.
+
+196
+00:13:01,280 --> 00:13:04,760
+And when I began looking at the
+cost of the speech to text APIs
+
+197
+00:13:04,760 --> 00:13:08,640
+and what I was spending,
+I just thought there's it's actually,
+
+198
+00:13:08,840 --> 00:13:13,320
+in my opinion, just one of the better
+deals in API spending and in cloud.
+
+199
+00:13:13,360 --> 00:13:17,400
+Like it's just not that expensive
+for very, very good models that are
+
+200
+00:13:17,520 --> 00:13:20,960
+much more, you know, you're going
+to be able to run the full model,
+
+201
+00:13:21,480 --> 00:13:26,080
+the latest model versus whatever
+you can run on your average GPU.
+
+202
+00:13:26,120 --> 00:13:29,880
+Unless you want to buy a crazy GPU.
+It doesn't really make sense to me.
+
+203
+00:13:29,880 --> 00:13:33,600
+Now, privacy is another concern.
+Um, that I know is kind of like a
+
+204
+00:13:33,640 --> 00:13:37,040
+very much a separate thing that
+people just don't want their voice,
+
+205
+00:13:37,040 --> 00:13:39,910
+data, and their voice leaving
+their local environment,
+
+206
+00:13:40,230 --> 00:13:43,950
+maybe for regulatory reasons as well.
+Um, but I'm not in that.
+
+207
+00:13:44,030 --> 00:13:48,030
+Um, I'm neither really care about
+people listening to my, uh,
+
+208
+00:13:48,070 --> 00:13:51,310
+grocery list consisting of, uh,
+reminding myself that I need to
+
+209
+00:13:51,350 --> 00:13:54,910
+buy more beer, Cheetos and hummus,
+which is kind of the three,
+
+210
+00:13:55,110 --> 00:13:59,430
+three staples of my diet.
+Um, during periods of poor nutrition.
+
+211
+00:13:59,710 --> 00:14:03,430
+Uh, but the kind of stuff that I
+transcribe, it's just not it's not a,
+
+212
+00:14:04,110 --> 00:14:09,470
+it's not a privacy thing and that
+sort of sensitive about and, uh,
+
+213
+00:14:09,470 --> 00:14:13,190
+I don't do anything so,
+you know, sensitive or secure,
+
+214
+00:14:13,190 --> 00:14:16,710
+that requires air gapping.
+So, um, I looked at the pricing and
+
+215
+00:14:16,710 --> 00:14:20,390
+especially the kind of older models,
+mini, um, some of them are very,
+
+216
+00:14:20,390 --> 00:14:23,230
+very affordable.
+And I did a back of the I did a
+
+217
+00:14:23,230 --> 00:14:27,270
+calculation once with ChatGPT
+and I was like, okay, this is a,
+
+218
+00:14:27,270 --> 00:14:31,190
+this is the API price for I can't
+remember whatever the model was.
+
+219
+00:14:31,670 --> 00:14:34,030
+Uh, let's say I just go at it
+like nonstop,
+
+220
+00:14:34,150 --> 00:14:37,530
+which it rarely happens. Probably.
+I would say on average,
+
+221
+00:14:37,530 --> 00:14:42,010
+I might dictate 30 to 60 minutes per
+day if I was probably summing up
+
+222
+00:14:42,010 --> 00:14:48,610
+the emails, documents, outlines,
+um, which is a lot, but it's it's
+
+223
+00:14:48,610 --> 00:14:50,850
+still a fairly modest amount.
+And I was like, well,
+
+224
+00:14:50,890 --> 00:14:54,050
+some days I do go on like 1 or 2
+days where I've been.
+
+225
+00:14:54,570 --> 00:14:58,570
+Usually when I'm like kind of out of
+the house and just have something
+
+226
+00:14:59,210 --> 00:15:02,370
+like, I have nothing else to do.
+Like if I'm at a hospital with a
+
+227
+00:15:02,370 --> 00:15:07,090
+newborn, uh, and you're waiting
+for like eight hours and hours
+
+228
+00:15:07,090 --> 00:15:10,330
+for an appointment, and I would
+probably have listened to podcasts
+
+229
+00:15:10,610 --> 00:15:14,130
+before becoming a speech fanatic.
+And I'm like, oh, wait,
+
+230
+00:15:14,170 --> 00:15:16,490
+let me just get down.
+Let me just get these ideas out
+
+231
+00:15:16,530 --> 00:15:19,730
+of my head.
+And that's when I'll go on my
+
+232
+00:15:19,770 --> 00:15:21,650
+speech binges.
+But those are like once every
+
+233
+00:15:21,650 --> 00:15:25,090
+few months, like not frequently.
+But I said, okay, let's just say
+
+234
+00:15:25,090 --> 00:15:30,770
+if I'm gonna price out.
+Cloud asked if I was like, dedicated
+
+235
+00:15:30,770 --> 00:15:37,000
+every second of every waking hour to
+transcribing for some odd reason. Um.
+
+236
+00:15:37,320 --> 00:15:39,800
+I mean, it'd have to, like,
+eat and use the toilet and,
+
+237
+00:15:39,840 --> 00:15:42,640
+like, you know, there's only so
+many hours I'm awake for.
+
+238
+00:15:42,640 --> 00:15:44,800
+So, like,
+let's just say a maximum of, like,
+
+239
+00:15:44,840 --> 00:15:48,800
+40 hours, 45 minutes in the hour.
+Then I said, all right,
+
+240
+00:15:48,800 --> 00:15:52,720
+let's just say 50. Who knows?
+You're dictating on the toilet.
+
+241
+00:15:52,760 --> 00:15:54,000
+We do it.
+Uh,
+
+242
+00:15:54,000 --> 00:15:58,840
+so it could be you could just do 60.
+But whatever I did, and every day,
+
+243
+00:15:58,880 --> 00:16:02,560
+like, you're going flat out seven
+days a week dictating non-stop.
+
+244
+00:16:02,600 --> 00:16:06,560
+I was like, what's my monthly API
+bill going to be at this price?
+
+245
+00:16:06,840 --> 00:16:09,240
+And it came out to like 70 or 80
+bucks.
+
+246
+00:16:09,240 --> 00:16:14,200
+And I was like, well, that would be
+an extraordinary amount of dictation.
+
+247
+00:16:14,200 --> 00:16:17,960
+And I would hope that there was
+some compelling reason,
+
+248
+00:16:18,160 --> 00:16:22,320
+more worth more than $70,
+that I embarked upon that project.
+
+249
+00:16:22,520 --> 00:16:25,320
+Uh, so given that that's kind of the
+max point for me, I said, that's
+
+250
+00:16:25,360 --> 00:16:29,120
+actually very, very affordable.
+Um, now you're gonna if you want
+
+251
+00:16:29,160 --> 00:16:34,200
+to spec out the costs and you want
+to do the post-processing that I
+
+252
+00:16:34,270 --> 00:16:37,230
+really do feel is valuable.
+Um, that's going to cost some more as
+
+253
+00:16:37,230 --> 00:16:43,230
+well, unless you're using Gemini,
+which, uh, needless to say, is a
+
+254
+00:16:43,230 --> 00:16:47,070
+random person sitting in Jerusalem.
+Uh, I have no affiliation,
+
+255
+00:16:47,070 --> 00:16:51,470
+nor with Google, nor anthropic,
+nor Gemini, nor any major tech vendor
+
+256
+00:16:51,470 --> 00:16:56,910
+for that matter. Um, I like Gemini.
+Not so much as a everyday model.
+
+257
+00:16:56,990 --> 00:16:59,950
+Um, it's kind of underwhelmed in
+that respect, I would say.
+
+258
+00:17:00,350 --> 00:17:03,150
+But for multimodal,
+I think it's got a lot to offer.
+
+259
+00:17:03,430 --> 00:17:06,990
+And I think that the transcribing
+functionality whereby it can,
+
+260
+00:17:07,390 --> 00:17:12,270
+um, process audio with a system
+prompt and both give you
+
+261
+00:17:12,310 --> 00:17:15,510
+transcription that's cleaned up,
+that reduces two steps to one.
+
+262
+00:17:15,830 --> 00:17:18,750
+And that for me is a very,
+very big deal.
+
+263
+00:17:18,750 --> 00:17:23,110
+And, uh, I feel like even Google
+has haven't really sort of thought
+
+264
+00:17:23,110 --> 00:17:27,550
+through how useful the that
+modality is and what kind of use
+
+265
+00:17:27,550 --> 00:17:30,910
+cases you can achieve with it.
+Because I found in the course of
+
+266
+00:17:30,910 --> 00:17:36,610
+this year just an endless list
+of really kind of system prompt,
+
+267
+00:17:36,850 --> 00:17:41,410
+system prompt stuff that I can say,
+okay, I've used it to capture context
+
+268
+00:17:41,410 --> 00:17:45,690
+data for AI, which is literally I
+might speak for if I wanted to have a
+
+269
+00:17:45,690 --> 00:17:49,850
+good bank of context data about,
+who knows, my childhood.
+
+270
+00:17:50,130 --> 00:17:53,570
+Uh, more realistically,
+maybe my career goals, uh,
+
+271
+00:17:53,570 --> 00:17:56,130
+something that would just be,
+like, really boring to type out.
+
+272
+00:17:56,250 --> 00:18:01,250
+So I'll just, like, sit in my car
+and record it for ten minutes.
+
+273
+00:18:01,250 --> 00:18:04,210
+And that ten minutes,
+you get a lot of information in,
+
+274
+00:18:04,650 --> 00:18:10,210
+um, emails, which is short text.
+Um, just there is a whole bunch.
+
+275
+00:18:10,210 --> 00:18:13,690
+And all these workflows kind of
+require a little bit of treatment
+
+276
+00:18:13,690 --> 00:18:17,610
+afterwards and different treatment.
+My context pipeline is kind of like
+
+277
+00:18:17,610 --> 00:18:21,330
+just extract the bare essentials.
+So you end up with me talking very
+
+278
+00:18:21,330 --> 00:18:24,370
+loosely about sort of what I've done
+in my career, where I've worked,
+
+279
+00:18:24,370 --> 00:18:27,730
+where I might like to work,
+and it goes it condenses that
+
+280
+00:18:27,730 --> 00:18:31,720
+down to very robotic language
+that is easy to chunk, parse,
+
+281
+00:18:31,720 --> 00:18:36,080
+and maybe put into a vector database.
+Daniel has worked in technology,
+
+282
+00:18:36,120 --> 00:18:39,760
+Daniel is a has been working in,
+you know, stuff like that.
+
+283
+00:18:39,760 --> 00:18:43,720
+That's not how you would speak.
+Um, but I figure it's probably easier
+
+284
+00:18:43,720 --> 00:18:48,240
+to parse for, after all, robots.
+So we've almost got to 20 minutes.
+
+285
+00:18:48,240 --> 00:18:52,760
+And this is actually a success
+because I wasted 20 minutes of my,
+
+286
+00:18:52,920 --> 00:18:57,000
+uh, of the evening speaking into
+a microphone, and, uh,
+
+287
+00:18:57,040 --> 00:19:00,960
+the levels were shot and, uh, it,
+uh, it was clipping and I said,
+
+288
+00:19:00,960 --> 00:19:03,320
+I can't really do an evaluation.
+I have to be fair.
+
+289
+00:19:03,320 --> 00:19:07,120
+I have to give the models a
+chance to do their thing.
+
+290
+00:19:07,640 --> 00:19:09,480
+Uh,
+what am I hoping to achieve in this?
+
+291
+00:19:09,520 --> 00:19:12,720
+Okay, my fine tune was a dud,
+as mentioned Deepgram SVT.
+
+292
+00:19:12,760 --> 00:19:15,640
+I'm really, really hopeful that
+this prototype will work.
+
+293
+00:19:15,920 --> 00:19:19,080
+And it's a built in public open
+source, so anyone is welcome to
+
+294
+00:19:19,120 --> 00:19:23,040
+use it if I make anything good.
+Um, but that was really exciting for
+
+295
+00:19:23,040 --> 00:19:27,520
+me last night when after hours of,
+um, trying my own prototype,
+
+296
+00:19:27,520 --> 00:19:31,350
+seeing someone just made
+something that works like that.
+
+297
+00:19:31,390 --> 00:19:32,790
+You know,
+you're not going to have to build a
+
+298
+00:19:32,790 --> 00:19:38,350
+custom conda environment and image.
+I have AMD GPU, which makes
+
+299
+00:19:38,350 --> 00:19:42,430
+things much more complicated.
+I didn't find it and I was about
+
+300
+00:19:42,430 --> 00:19:44,110
+to give up and I said,
+all right, let me just give deep
+
+301
+00:19:44,110 --> 00:19:48,870
+grams Linux thing a shot.
+And if this doesn't work, um,
+
+302
+00:19:48,870 --> 00:19:51,270
+I'm just going to go back to
+trying to code something myself.
+
+303
+00:19:51,630 --> 00:19:56,310
+And when I ran the script,
+I was using cloud code to do the
+
+304
+00:19:56,310 --> 00:20:00,150
+installation process.
+It ran the script and oh my gosh,
+
+305
+00:20:00,190 --> 00:20:05,470
+it works just like that.
+Uh, the tricky thing for all those
+
+306
+00:20:05,470 --> 00:20:10,430
+who wants to know all the nitty
+gritty, nitty gritty details, um, was
+
+307
+00:20:10,430 --> 00:20:13,870
+that I don't think it was actually
+struggling with transcription, but
+
+308
+00:20:13,870 --> 00:20:18,670
+pasting Wayland makes life very hard,
+and I think there was something not
+
+309
+00:20:18,670 --> 00:20:21,990
+running in the right time anyway.
+Deepgram I looked at how they
+
+310
+00:20:21,990 --> 00:20:24,830
+actually handle that because it
+worked out of the box when other
+
+311
+00:20:24,830 --> 00:20:29,260
+stuff didn't, and it was quite a
+clever little mechanism,
+
+312
+00:20:29,580 --> 00:20:32,220
+and but more so than that,
+the accuracy was brilliant.
+
+313
+00:20:32,260 --> 00:20:35,140
+Now, what am I doing here?
+This is going to be a 20 minute
+
+314
+00:20:35,380 --> 00:20:43,100
+audio sample, and I'm I think
+I've done 1 or 2 of these before,
+
+315
+00:20:43,100 --> 00:20:49,300
+but I did it with short, snappy voice
+notes. This is kind of long form.
+
+316
+00:20:49,580 --> 00:20:51,860
+This actually might be a better
+approximation for what's useful
+
+317
+00:20:51,860 --> 00:20:56,220
+to me than voice memos.
+Like I need to buy three liters
+
+318
+00:20:56,220 --> 00:20:59,300
+of milk tomorrow, and pita bread,
+which is probably how like half
+
+319
+00:20:59,300 --> 00:21:02,940
+my voice voice notes sound like
+if anyone were to, I don't know,
+
+320
+00:21:02,980 --> 00:21:04,700
+like find my phone,
+they'd be like, this is the most
+
+321
+00:21:04,700 --> 00:21:07,540
+boring person in the world.
+Although actually there are some
+
+322
+00:21:07,580 --> 00:21:09,820
+like kind of, uh,
+journaling thoughts as well.
+
+323
+00:21:09,820 --> 00:21:13,820
+But it's a lot of content like that.
+And the probably for the evaluation,
+
+324
+00:21:13,820 --> 00:21:20,780
+the most useful thing is slightly
+obscure tech GitHub uh, hugging face
+
+325
+00:21:21,300 --> 00:21:24,780
+not so obscure that it's not going
+to have a chance of knowing it,
+
+326
+00:21:24,780 --> 00:21:27,760
+but hopefully sufficiently well
+known that the model should get it.
+
+327
+00:21:28,320 --> 00:21:30,880
+I tried to do a little bit of
+speaking really fast and
+
+328
+00:21:30,880 --> 00:21:33,320
+speaking very slowly.
+I would say in general,
+
+329
+00:21:33,320 --> 00:21:37,000
+I've spoken, delivered this at a
+faster pace than I usually would
+
+330
+00:21:37,040 --> 00:21:40,400
+owing to strong coffee flowing
+through my bloodstream.
+
+331
+00:21:41,040 --> 00:21:44,320
+And the thing that I'm not going
+to get in this benchmark is
+
+332
+00:21:44,320 --> 00:21:47,000
+background noise, which in my first
+take that I had to get rid of,
+
+333
+00:21:47,800 --> 00:21:51,360
+my wife came in with my son and
+for a good night kiss.
+
+334
+00:21:51,560 --> 00:21:55,240
+And that actually would have
+been super helpful to get in
+
+335
+00:21:55,240 --> 00:21:59,880
+because it was not diarised.
+Or if we had diarisation a female,
+
+336
+00:22:00,000 --> 00:22:02,400
+I could say I want the male
+voice and that wasn't intended
+
+337
+00:22:02,400 --> 00:22:05,400
+for transcription.
+Um, and we're not going to get
+
+338
+00:22:05,400 --> 00:22:07,080
+background noise like people
+honking their horns,
+
+339
+00:22:07,080 --> 00:22:11,400
+which is something I've done in my
+main data set where I am trying to
+
+340
+00:22:11,560 --> 00:22:15,640
+go back to some of my voice notes,
+annotate them, and run a benchmark.
+
+341
+00:22:15,640 --> 00:22:19,080
+But this is going to be just a
+pure quick test.
+
+342
+00:22:19,560 --> 00:22:24,000
+And as someone I'm working on a
+voice note idea,
+
+343
+00:22:24,000 --> 00:22:28,350
+that's my sort of end motivation.
+Besides thinking it's an
+
+344
+00:22:28,350 --> 00:22:31,710
+absolutely outstanding technology
+that's coming to viability.
+
+345
+00:22:31,710 --> 00:22:34,790
+And really, I know this sounds
+cheesy can actually have a very
+
+346
+00:22:34,790 --> 00:22:38,950
+transformative effect.
+Um, it's, you know, voice technology
+
+347
+00:22:38,990 --> 00:22:45,030
+has been life changing for, uh,
+folks living with, um, disabilities.
+
+348
+00:22:45,750 --> 00:22:48,670
+And I think there's something
+really nice about the fact that
+
+349
+00:22:48,670 --> 00:22:52,830
+it can also benefit, you know,
+folks who are able bodied and like,
+
+350
+00:22:52,870 --> 00:22:59,070
+we can all in different ways, um,
+make this tech as useful as possible,
+
+351
+00:22:59,110 --> 00:23:01,230
+regardless of the exact way that
+we're using it.
+
+352
+00:23:01,630 --> 00:23:04,830
+Um, and I think there's something
+very powerful in that, and it can be
+
+353
+00:23:04,830 --> 00:23:09,030
+very cool. Um, I see use potential.
+What excites me about voice tech?
+
+354
+00:23:09,870 --> 00:23:13,670
+A lot of things, actually.
+Firstly, the fact that it's cheap
+
+355
+00:23:13,670 --> 00:23:17,230
+and accurate, as I mentioned at
+the very start of this, um,
+
+356
+00:23:17,230 --> 00:23:20,910
+and it's getting better and better
+with stuff like accent handling, um,
+
+357
+00:23:20,910 --> 00:23:24,300
+I'm not sure my, my fine tune will
+actually ever come to fruition in the
+
+358
+00:23:24,300 --> 00:23:27,980
+sense that I'll use it day to day,
+as I imagine I get like superb,
+
+359
+00:23:27,980 --> 00:23:33,660
+flawless word error rates because I'm
+just kind of skeptical about local
+
+360
+00:23:33,660 --> 00:23:38,220
+speech to texts, as I mentioned.
+And I think the pace of innovation
+
+361
+00:23:38,220 --> 00:23:42,180
+and improvement in the models,
+the main reasons for fine tuning from
+
+362
+00:23:42,180 --> 00:23:46,460
+what I've seen have been people who
+are something that really blows,
+
+363
+00:23:46,500 --> 00:23:53,060
+blows my mind about ASR is the idea
+that it's inherently a lingual
+
+364
+00:23:53,060 --> 00:23:59,220
+or multilingual phonetic based.
+So as folks who use speak very
+
+365
+00:23:59,260 --> 00:24:02,340
+obscure languages that there may
+be there might be a paucity of
+
+366
+00:24:02,340 --> 00:24:05,620
+training data or almost none at all,
+and therefore the accuracy is
+
+367
+00:24:05,620 --> 00:24:10,780
+significantly reduced or folks
+in very critical environments.
+
+368
+00:24:10,820 --> 00:24:13,500
+I know there are.
+This is used extensively in medical
+
+369
+00:24:13,500 --> 00:24:18,260
+transcription and dispatcher work as,
+um, you know, the call centers who
+
+370
+00:24:18,260 --> 00:24:22,610
+send out ambulances, etc., where
+accuracy is absolutely paramount.
+
+371
+00:24:22,610 --> 00:24:26,170
+And in the case of doctors,
+radiologists, they might be using
+
+372
+00:24:26,170 --> 00:24:29,730
+very specialized vocab all the time.
+So those are kind of the main
+
+373
+00:24:29,730 --> 00:24:31,650
+two things.
+And I'm not sure that really just for
+
+374
+00:24:31,650 --> 00:24:37,410
+trying to make it better on a few
+random tech words with my slightly.
+
+375
+00:24:37,450 --> 00:24:41,370
+I mean, I have an accent, but like,
+not, you know, an accent that a few
+
+376
+00:24:41,410 --> 00:24:47,330
+other million people have. Ish.
+I'm not sure that my little fine
+
+377
+00:24:47,330 --> 00:24:52,370
+tune is going to actually like the
+bump in word error rate reduction.
+
+378
+00:24:52,370 --> 00:24:54,690
+If I ever actually figure out how
+to do it and get it up to the
+
+379
+00:24:54,690 --> 00:24:58,730
+cloud by the time I've done that.
+I suspect that the next
+
+380
+00:24:58,730 --> 00:25:01,530
+generation of ASR will just be
+so good that it will kind of be.
+
+381
+00:25:02,050 --> 00:25:03,890
+Ah, well,
+that would be cool if it worked out,
+
+382
+00:25:03,890 --> 00:25:08,850
+but I'll just use this instead.
+So that's going to be it for today's
+
+383
+00:25:08,850 --> 00:25:14,250
+episode of, uh, voice training data.
+Single long shot evaluation.
+
+384
+00:25:14,530 --> 00:25:17,450
+Who am I going to compare?
+Whisper is always good as a
+
+385
+00:25:17,450 --> 00:25:20,720
+benchmark, but I'm more
+interested in seeing Whisperer
+
+386
+00:25:20,720 --> 00:25:25,200
+head to head with two things,
+really. One is whisper variance.
+
+387
+00:25:25,200 --> 00:25:30,000
+So you've got these projects like
+faster Whisper, Still whisper.
+
+388
+00:25:30,000 --> 00:25:31,760
+It's a bit confusing.
+There's a whole bunch of them
+
+389
+00:25:32,040 --> 00:25:34,920
+and the emerging acers,
+which are also a thing.
+
+390
+00:25:35,320 --> 00:25:37,800
+My intention for this is I'm not
+sure I'm going to have the time
+
+391
+00:25:37,800 --> 00:25:41,760
+in any point in the foreseeable
+future to go back through this whole
+
+392
+00:25:41,760 --> 00:25:46,680
+episode and create a proper source,
+truth or a fix.
+
+393
+00:25:47,440 --> 00:25:51,800
+Everything might do it if I can
+get one transcription that
+
+394
+00:25:51,800 --> 00:25:56,840
+sufficiently close to perfection.
+But what I would actually love
+
+395
+00:25:56,840 --> 00:25:59,920
+to do on Hugging Face I think
+would be a great.
+
+396
+00:25:59,920 --> 00:26:03,680
+Probably how I might visualize this
+is having the audio waveform play,
+
+397
+00:26:04,160 --> 00:26:09,920
+and then have the transcript for each
+model below it, and maybe even a,
+
+398
+00:26:10,600 --> 00:26:15,240
+um, like, you know, two scale and
+maybe even a local one as well,
+
+399
+00:26:15,280 --> 00:26:21,820
+like local whisper versus open
+AI API, Etc. and, um, I can then
+
+400
+00:26:21,820 --> 00:26:24,500
+actually listen back to segments
+or anyone who wants to can listen
+
+401
+00:26:24,500 --> 00:26:29,540
+back to segments of this recording
+and see where a particular model
+
+402
+00:26:29,580 --> 00:26:33,060
+struggled and others didn't, as well
+as the sort of headline finding
+
+403
+00:26:33,100 --> 00:26:36,900
+of which had the best, uh, wer.
+But that would require the source
+
+404
+00:26:36,900 --> 00:26:40,140
+of truth. Okay. That's it.
+Hope this was, I don't know,
+
+405
+00:26:40,300 --> 00:26:43,580
+maybe useful for other folks
+interested in stuff you want to see.
+
+406
+00:26:44,060 --> 00:26:48,220
+I always feel think I've just said
+something I didn't intend to say.
+
+407
+00:26:48,780 --> 00:26:51,140
+I said for those, listen carefully.
+Including, hopefully,
+
+408
+00:26:51,140 --> 00:26:54,180
+the models themselves.
+This has been myself,
+
+409
+00:26:54,220 --> 00:26:58,020
+Daniel Rosehill, for more, um,
+jumbled repositories about my,
+
+410
+00:26:58,060 --> 00:27:00,940
+uh, roving interest in AI,
+but particularly Agentic,
+
+411
+00:27:01,300 --> 00:27:05,460
+MCP and voice tech.
+Uh, you can find me on GitHub.
+
+412
+00:27:05,940 --> 00:27:11,260
+Hugging face. Where else?
+Daniel, which is my personal website,
+
+413
+00:27:11,260 --> 00:27:15,380
+as well as this podcast whose
+name I sadly cannot remember.
+
+414
+00:27:15,820 --> 00:27:17,540
+Until next time.
+Thanks for listening.

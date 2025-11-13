@@ -1,0 +1,362 @@
+{
+  "runs": [
+    {
+      "run_id": "run-1",
+      "run_type": "local-stt",
+      "model": "whisper-base",
+      "provider": "local",
+      "inference_provider": null,
+      "engine": "Buzz",
+      "run_method": {
+        "interface": "gui",
+        "automation": "manual",
+        "description": "Processed using Buzz desktop application"
+      },
+      "settings": {
+        "language": "en",
+        "task": "transcribe"
+      },
+      "output_dir": "runs/local-stt/run-1",
+      "completed": true,
+      "notes": "Whisper Base (local inference) using Buzz",
+      "run_notes": {
+        "language_detection": {
+          "auto_detect": false,
+          "language_specified": true,
+          "language_code": "en"
+        }
+      }
+    },
+    {
+      "run_id": "run-2",
+      "run_type": "local-stt",
+      "model": "whisper-tiny",
+      "provider": "local",
+      "inference_provider": null,
+      "engine": "Buzz",
+      "run_method": {
+        "interface": "gui",
+        "automation": "manual",
+        "description": "Processed using Buzz desktop application"
+      },
+      "settings": {
+        "language": "en",
+        "task": "transcribe"
+      },
+      "output_dir": "runs/local-stt/run-2",
+      "completed": true,
+      "notes": "Whisper Tiny (local inference) using Buzz",
+      "run_notes": {
+        "language_detection": {
+          "auto_detect": false,
+          "language_specified": true,
+          "language_code": "en"
+        }
+      }
+    },
+    {
+      "run_id": "run-3",
+      "run_type": "local-stt",
+      "model": "whisper-base",
+      "provider": "local",
+      "inference_provider": null,
+      "engine": "Buzz",
+      "run_method": {
+        "interface": "gui",
+        "automation": "manual",
+        "description": "Processed using Buzz desktop application"
+      },
+      "settings": {
+        "language": "auto-detect",
+        "task": "transcribe"
+      },
+      "output_dir": "runs/local-stt/run-3",
+      "completed": true,
+      "notes": "Whisper Base (as run 1) locally but with language set to detect rather than specified as English",
+      "run_notes": {
+        "language_detection": {
+          "auto_detect": true,
+          "language_specified": false,
+          "language_code": "auto"
+        }
+      }
+    },
+    {
+      "run_id": "run-4",
+      "run_type": "cloud-stt",
+      "model": "whisper-1",
+      "provider": "openai",
+      "inference_provider": "edenai",
+      "engine": "api",
+      "run_method": {
+        "interface": "api",
+        "automation": "automated",
+        "description": "Executed via edenai_stt_runner.py script"
+      },
+      "settings": {
+        "language": "en",
+        "temperature": 0.0
+      },
+      "output_dir": "runs/cloud-stt/run-4",
+      "completed": false,
+      "notes": "OpenAI Whisper API",
+      "run_notes": {
+        "language_detection": {
+          "auto_detect": false,
+          "language_specified": true,
+          "language_code": "en"
+        }
+      }
+    },
+    {
+      "run_id": "run-5",
+      "run_type": "cloud-stt",
+      "model": "nova-2",
+      "provider": "deepgram",
+      "inference_provider": "edenai",
+      "engine": "api",
+      "run_method": {
+        "interface": "api",
+        "automation": "automated",
+        "description": "Executed via edenai_stt_runner.py script"
+      },
+      "settings": {
+        "language": "en",
+        "smart_format": true,
+        "punctuate": true
+      },
+      "output_dir": "runs/cloud-stt/run-5",
+      "completed": false,
+      "notes": "Deepgram Nova-2 model",
+      "run_notes": {
+        "language_detection": {
+          "auto_detect": false,
+          "language_specified": true,
+          "language_code": "en"
+        }
+      }
+    },
+    {
+      "run_id": "run-6",
+      "run_type": "cloud-stt",
+      "model": "chirp",
+      "provider": "assemblyai",
+      "inference_provider": "edenai",
+      "engine": "api",
+      "run_method": {
+        "interface": "api",
+        "automation": "automated",
+        "description": "Executed via edenai_stt_runner.py script"
+      },
+      "settings": {
+        "language_code": "en",
+        "punctuate": true,
+        "format_text": true
+      },
+      "output_dir": "runs/cloud-stt/run-6",
+      "completed": false,
+      "notes": "AssemblyAI Universal-1 (Chirp) model",
+      "run_notes": {
+        "language_detection": {
+          "auto_detect": false,
+          "language_specified": true,
+          "language_code": "en"
+        }
+      }
+    },
+    {
+      "run_id": "run-7",
+      "run_type": "cloud-stt",
+      "model": "whisper-large-v3",
+      "provider": "groq",
+      "inference_provider": "edenai",
+      "engine": "api",
+      "run_method": {
+        "interface": "api",
+        "automation": "automated",
+        "description": "Executed via edenai_stt_runner.py script"
+      },
+      "settings": {
+        "language": "en",
+        "temperature": 0.0
+      },
+      "output_dir": "runs/cloud-stt/run-7",
+      "completed": false,
+      "notes": "Groq Whisper Large V3",
+      "run_notes": {
+        "language_detection": {
+          "auto_detect": false,
+          "language_specified": true,
+          "language_code": "en"
+        }
+      }
+    },
+    {
+      "run_id": "run-8",
+      "run_type": "cloud-stt",
+      "model": "enhanced",
+      "provider": "speechmatics",
+      "inference_provider": "edenai",
+      "engine": "api",
+      "run_method": {
+        "interface": "api",
+        "automation": "automated",
+        "description": "Executed via edenai_stt_runner.py script"
+      },
+      "settings": {
+        "language": "en",
+        "operating_point": "enhanced",
+        "enable_partials": false
+      },
+      "output_dir": "runs/cloud-stt/run-8",
+      "completed": false,
+      "notes": "Speechmatics Enhanced model via Eden AI",
+      "run_notes": {
+        "language_detection": {
+          "auto_detect": false,
+          "language_specified": true,
+          "language_code": "en"
+        }
+      }
+    },
+    {
+      "run_id": "run-9",
+      "run_type": "cloud-stt",
+      "model": "whisper",
+      "provider": "google",
+      "inference_provider": "edenai",
+      "engine": "api",
+      "run_method": {
+        "interface": "api",
+        "automation": "automated",
+        "description": "Executed via edenai_stt_runner.py script"
+      },
+      "settings": {
+        "language": "en"
+      },
+      "output_dir": "runs/cloud-stt/run-9",
+      "completed": false,
+      "notes": "Google Speech-to-Text via Eden AI",
+      "run_notes": {
+        "language_detection": {
+          "auto_detect": false,
+          "language_specified": true,
+          "language_code": "en"
+        }
+      }
+    },
+    {
+      "run_id": "run-10",
+      "run_type": "cloud-stt",
+      "model": "transcribe",
+      "provider": "amazon",
+      "inference_provider": "edenai",
+      "engine": "api",
+      "run_method": {
+        "interface": "api",
+        "automation": "automated",
+        "description": "Executed via edenai_stt_runner.py script"
+      },
+      "settings": {
+        "language": "en"
+      },
+      "output_dir": "runs/cloud-stt/run-10",
+      "completed": false,
+      "notes": "Amazon Transcribe via Eden AI",
+      "run_notes": {
+        "language_detection": {
+          "auto_detect": false,
+          "language_specified": true,
+          "language_code": "en"
+        }
+      }
+    },
+    {
+      "run_id": "run-11",
+      "run_type": "cloud-stt",
+      "model": "azure-stt",
+      "provider": "microsoft",
+      "inference_provider": "edenai",
+      "engine": "api",
+      "run_method": {
+        "interface": "api",
+        "automation": "automated",
+        "description": "Executed via edenai_stt_runner.py script"
+      },
+      "settings": {
+        "language": "en"
+      },
+      "output_dir": "runs/cloud-stt/run-11",
+      "completed": false,
+      "notes": "Microsoft Azure Speech-to-Text via Eden AI",
+      "run_notes": {
+        "language_detection": {
+          "auto_detect": false,
+          "language_specified": true,
+          "language_code": "en"
+        }
+      }
+    },
+    {
+      "run_id": "run-12",
+      "run_type": "cloud-stt",
+      "model": "default",
+      "provider": "symbl",
+      "inference_provider": "edenai",
+      "engine": "api",
+      "run_method": {
+        "interface": "api",
+        "automation": "automated",
+        "description": "Executed via edenai_stt_runner.py script"
+      },
+      "settings": {
+        "language": "en"
+      },
+      "output_dir": "runs/cloud-stt/run-12",
+      "completed": false,
+      "notes": "Symbl.ai via Eden AI",
+      "run_notes": {
+        "language_detection": {
+          "auto_detect": false,
+          "language_specified": true,
+          "language_code": "en"
+        }
+      }
+    },
+    {
+      "run_id": "run-13",
+      "run_type": "cloud-stt",
+      "model": "fast",
+      "provider": "gladia",
+      "inference_provider": "edenai",
+      "engine": "api",
+      "run_method": {
+        "interface": "api",
+        "automation": "automated",
+        "description": "Executed via edenai_stt_runner.py script"
+      },
+      "settings": {
+        "language": "en"
+      },
+      "output_dir": "runs/cloud-stt/run-13",
+      "completed": false,
+      "notes": "Gladia fast model via Eden AI",
+      "run_notes": {
+        "language_detection": {
+          "auto_detect": false,
+          "language_specified": true,
+          "language_code": "en"
+        }
+      }
+    }
+  ],
+  "source_audio": "data/audio/podcast.mp3",
+  "source_of_truth": "data/ground-truth/truth_1.txt",
+  "evaluation_metrics": [
+    "wer",
+    "cer",
+    "word_accuracy",
+    "processing_time",
+    "cost"
+  ]
+}
