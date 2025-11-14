@@ -11,6 +11,11 @@ Comparative evaluation of speech-to-text models on long-form audio transcription
 
 ## Results Summary
 
+### Key Takeaways
+- Local Whisper-Base reaches the highest word accuracy (82.48%) but adds only 21.90% of the reference punctuation, so post-editing remains mandatory for narrative polish.
+- Cloud APIs sit within 1.5 percentage points of the top local word score yet capture roughly twice the punctuation (up to 51.17%), which lowers manual formatting time even when word accuracy is similar.
+- Over-punctuation varies widely: Speechmatics inserts 46% more marks than the reference, while Deepgram Nova-3 stays close to the professional transcript (698 vs 688 marks).
+
 ### Word Accuracy Performance
 
 ```mermaid
@@ -23,6 +28,7 @@ xychart-beta
 ```
 
 *Legend: Green = Local models, Blue = Cloud models*
+*This palette is reused in the charts below to emphasize deployment differences.*
 *W-Base = Whisper-Base, W-Base* = Whisper-Base Auto-detect, DG = Deepgram, OAI = OpenAI*
 
 | Rank | Provider | Model | WER % | CER % | Word Accuracy % | Punctuation % |
@@ -39,7 +45,7 @@ xychart-beta
 ### Punctuation Accuracy Performance
 
 ```mermaid
-%%{init: {'theme':'base'}}%%
+%%{init: {'theme':'base', 'themeVariables': {'xyChart': {'plotColorPalette': '#1976D2, #1976D2, #1976D2, #1976D2, #1976D2, #2E7D32, #2E7D32'}}}}%%
 xychart-beta
     title "Punctuation Accuracy Comparison (%)"
     x-axis [Deepgram-Nova3, AssemblyAI, OpenAI-Whisper, Gladia, Speechmatics, Whisper-Base, Whisper-Tiny]
@@ -62,7 +68,7 @@ xychart-beta
 ### Word Error Rate (WER) Comparison
 
 ```mermaid
-%%{init: {'theme':'base'}}%%
+%%{init: {'theme':'base', 'themeVariables': {'xyChart': {'plotColorPalette': '#2E7D32, #2E7D32, #1976D2, #1976D2, #1976D2, #1976D2, #1976D2, #2E7D32'}}}}%%
 xychart-beta
     title "Word Error Rate - Lower is Better (%)"
     x-axis [Whisper-Base, Whisper-Base-Auto, Deepgram-Nova3, AssemblyAI, OpenAI-Whisper, Gladia, Speechmatics, Whisper-Tiny]
@@ -73,7 +79,7 @@ xychart-beta
 ### Local vs Cloud Performance
 
 ```mermaid
-%%{init: {'theme':'base'}}%%
+%%{init: {'theme':'base', 'themeVariables': {'xyChart': {'plotColorPalette': '#2E7D32, #1976D2, #2E7D32, #1976D2'}}}}%%
 xychart-beta
     title "Local vs Cloud: Word Accuracy & Punctuation"
     x-axis ["Local Avg Word", "Cloud Avg Word", "Local Avg Punct", "Cloud Avg Punct"]
