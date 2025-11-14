@@ -14,13 +14,16 @@ Comparative evaluation of speech-to-text models on long-form audio transcription
 ### Word Accuracy Performance
 
 ```mermaid
-%%{init: {'theme':'base'}}%%
+%%{init: {'theme':'base', 'themeVariables': {'xyChart': {'plotColorPalette': '#2E7D32, #2E7D32, #1976D2, #1976D2, #1976D2, #1976D2, #1976D2, #2E7D32'}}}}%%
 xychart-beta
     title "Word Accuracy Comparison (%)"
-    x-axis [Whisper-Base, Whisper-Base-Auto, Deepgram-Nova3, AssemblyAI, OpenAI-Whisper, Gladia, Speechmatics, Whisper-Tiny]
+    x-axis ["W-Base", "W-Base*", "DG-Nova3", "AssemblyAI", "OAI-W", "Gladia", "Speechmatics", "W-Tiny"]
     y-axis "Accuracy %" 75 --> 85
     bar [82.48, 82.48, 81.28, 81.21, 80.73, 79.17, 78.35, 77.51]
 ```
+
+*Legend: Green = Local models, Blue = Cloud models*
+*W-Base = Whisper-Base, W-Base* = Whisper-Base Auto-detect, DG = Deepgram, OAI = OpenAI*
 
 | Rank | Provider | Model | WER % | CER % | Word Accuracy % | Punctuation % |
 |------|----------|-------|-------|-------|-----------------|---------------|
