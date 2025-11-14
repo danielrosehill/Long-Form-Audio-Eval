@@ -18,17 +18,9 @@ Comparative evaluation of speech-to-text models on long-form audio transcription
 
 ### Word Accuracy Performance
 
-```mermaid
-%%{init: {'theme':'base', 'themeVariables': {'xyChart': {'plotColorPalette': '#2E7D32, #2E7D32, #1976D2, #1976D2, #1976D2, #1976D2, #1976D2, #2E7D32'}}}}%%
-xychart-beta
-    title "Word Accuracy Comparison (%)"
-    x-axis ["W-Base", "W-Base*", "DG-Nova3", "AssemblyAI", "OAI-W", "Gladia", "Speechmatics", "W-Tiny"]
-    y-axis "Accuracy %" 75 --> 85
-    bar [82.48, 82.48, 81.28, 81.21, 80.73, 79.17, 78.35, 77.51]
-```
+![Word Accuracy Comparison chart](docs/images/word_accuracy.svg)
 
-*Legend: Green = Local models, Blue = Cloud models*
-*This palette is reused in the charts below to emphasize deployment differences.*
+*Legend: Green = Local models, Blue = Cloud models. Regenerate the SVGs with `python3 scripts/generate_charts.py` when values change.*
 *W-Base = Whisper-Base, W-Base* = Whisper-Base Auto-detect, DG = Deepgram, OAI = OpenAI*
 
 | Rank | Provider | Model | WER % | CER % | Word Accuracy % | Punctuation % |
@@ -44,14 +36,7 @@ xychart-beta
 
 ### Punctuation Accuracy Performance
 
-```mermaid
-%%{init: {'theme':'base', 'themeVariables': {'xyChart': {'plotColorPalette': '#1976D2, #1976D2, #1976D2, #1976D2, #1976D2, #2E7D32, #2E7D32'}}}}%%
-xychart-beta
-    title "Punctuation Accuracy Comparison (%)"
-    x-axis [Deepgram-Nova3, AssemblyAI, OpenAI-Whisper, Gladia, Speechmatics, Whisper-Base, Whisper-Tiny]
-    y-axis "Accuracy %" 0 --> 55
-    bar [51.17, 48.43, 44.44, 44.13, 38.23, 21.90, 18.78]
-```
+![Punctuation Accuracy Comparison chart](docs/images/punctuation_accuracy.svg)
 
 | Rank | Provider | Model | Punctuation % | Context Match % | Punct Count | Word Accuracy % |
 |------|----------|-------|---------------|-----------------|-------------|-----------------|
@@ -67,25 +52,11 @@ xychart-beta
 
 ### Word Error Rate (WER) Comparison
 
-```mermaid
-%%{init: {'theme':'base', 'themeVariables': {'xyChart': {'plotColorPalette': '#2E7D32, #2E7D32, #1976D2, #1976D2, #1976D2, #1976D2, #1976D2, #2E7D32'}}}}%%
-xychart-beta
-    title "Word Error Rate - Lower is Better (%)"
-    x-axis [Whisper-Base, Whisper-Base-Auto, Deepgram-Nova3, AssemblyAI, OpenAI-Whisper, Gladia, Speechmatics, Whisper-Tiny]
-    y-axis "WER %" 15 --> 25
-    bar [17.52, 17.52, 18.72, 18.79, 19.27, 20.83, 21.65, 22.49]
-```
+![Word Error Rate Comparison chart](docs/images/wer.svg)
 
 ### Local vs Cloud Performance
 
-```mermaid
-%%{init: {'theme':'base', 'themeVariables': {'xyChart': {'plotColorPalette': '#2E7D32, #1976D2, #2E7D32, #1976D2'}}}}%%
-xychart-beta
-    title "Local vs Cloud: Word Accuracy & Punctuation"
-    x-axis ["Local Avg Word", "Cloud Avg Word", "Local Avg Punct", "Cloud Avg Punct"]
-    y-axis "Accuracy %" 0 --> 85
-    bar [80.82, 80.10, 20.86, 45.28]
-```
+![Local vs Cloud averages chart](docs/images/local_vs_cloud.svg)
 
 **Word Accuracy:**
 - Local Whisper-Base achieved the highest word accuracy (82.48%)
